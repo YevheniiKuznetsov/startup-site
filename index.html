@@ -11,8 +11,15 @@
             <div class="fixed-top" id="navigation">
                 <div class="container">
                     <div class="navbar navbar-expand justify-content-between">
-                        <div class="navbar-brand">Startup</div>
-                        <nav>
+                        <div class="logo navbar-brand">Startup</div>
+                        <div class="mobile-menu-icon d-md-none" id="mobileMenuIcon">  
+                            <div class="block-icon">
+                                <div class="stick stick-1"></div>
+                                <div class="stick stick-2"></div>
+                                <div class="stick stick-3"></div>
+                            </div> 
+                        </div>
+                        <nav class="d-none d-lg-block menu-show">
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a class="topLink" href="#home">Home</a></li>
                                 <li class="nav-item"><a class="topLink" href="#services">Services</a></li>
@@ -22,6 +29,15 @@
                             </ul>
                         </nav>
                     </div>
+                </div>
+                <div class="mobile-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="topLink" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="topLink" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="topLink" href="#about">About</a></li>
+                        <li class="nav-item"><a class="topLink" href="#letsWorks">Works</a></li>
+                        <li class="nav-item"><a class="topLink" href="#contact">Cantact</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="header-block flex-center">
@@ -41,21 +57,21 @@
                             <div class="services-img">
                                 <img src="src/images/faicon.png" alt="">
                             </div>
-                            <div class="monsterrar-fonts-text">CLEAN TYPHOGRAPHY</div>
+                            <div class="services-discription-text">CLEAN TYPHOGRAPHY</div>
                             <div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
                         </div>
                         <div class="services-item col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                             <div class="services-img">
                                 <img src="src/images/typography.png" alt="">
                             </div>
-                            <div class="monsterrar-fonts-text">ROCK SOLID CODE</div>
+                            <div class="services-discription-text">ROCK SOLID CODE</div>
                             <div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
                         </div>
                         <div class="services-item col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                             <div class="services-img">
                                 <img src="src/images/fasupport.png" alt="">
                             </div>
-                            <div class="monsterrar-fonts-text">EXPERT SUPPORT</div>
+                            <div class="services-discription-text">EXPERT SUPPORT</div>
                             <div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
                         </div>
                     </div>
@@ -196,115 +212,133 @@
                 <div class="container">
                     <h3>LETS WORKS</h3>
                     <div class="works-wrapper row">
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/galery1.jpg" alt="">
-                            <div class="track-element">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
+                        
+                        <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/galery1.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/galery2.jpg" alt="">
-                            <div class="track-element">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/galery2.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/gallery3.jpg" alt="">
-                            <div class="track-element">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/gallery3.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/gallery4.jpg" alt="">
-                            <div class="track-element">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/gallery4.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/gallery5.jpg" alt="">
-                            <div class="track-element">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/gallery5.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/gallery6.jpg" alt="">
-                            <div class="track-element">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/gallery6.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/gallery7.jpg" alt="">
-                            <div class="track-element">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/gallery7.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/gallery8.jpg" alt="">
-                            <div class="track-element fgfg">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/gallery8.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-item col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                            <img src="src/images/gallery9.jpg" alt="">
-                            <div class="track-element dfgdfd">
-                                <div class="impact-object view-wrapper">
-                                    <div class="view-content">
-                                        <div class="view-title">Hair Dresser</div>
-                                        <div class="view-description">Branding</div>
-                                        <div class="view-button">VIEW</div>
-                                    </div>
-                                    
+                    </div>
+                </div>
+                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="wrap">
+                        <img src="src/images/gallery9.jpg" alt="">
+                        <div class="track-element">
+                            <div class="impact-object view-wrapper">
+                                <div class="view-content">
+                                    <div class="view-title">Hair Dresser</div>
+                                    <div class="view-description">Branding</div>
+                                    <div class="view-button">VIEW</div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
                     </div>
                 </div>
                 <div class="works-footer container-fluid">
@@ -314,6 +348,7 @@
                     <a class="topLink" href="#contact"><div class="works-footer-button">GET IN TOUCH</div></a>
                 </div>
             </div>
+            
             <div class="contact" id="contact">
                 <div class="container">
                     <h3>GET IN TOUCH</h3>
@@ -363,13 +398,13 @@
                             
                             <div class="form-input col-12">
                                 <div class="submit-button">SEND MESSAGE</div>
+                                <div class="warning-form-text"><span></span>We’ll contact you as as possible. We don’t reply on Monday.</div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="wr"><div class="blok"><img src="src/images/devman3.jpg"></div></div>
         <footer>
             <div class="footer-img flex-center">
                 <img src="src/images/footerimg.png" alt="footer img">
@@ -379,6 +414,15 @@
             <div class="line"></div>
             <div class="footer-text">© 2015 Startup, Designed by ShapedTheme</div>
         </footer>
+        <div class="con">
+            <div class="block-icon">
+            <div class="stick stick-1"></div>
+            <div class="stick stick-2"></div>
+            <div class="stick stick-3"></div>
+        </div>
+        </div>
+        
         <script src="dist/main.js"></script>
+        
     </body>
 </html>

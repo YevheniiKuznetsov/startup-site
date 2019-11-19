@@ -1,10 +1,18 @@
 body {
+    font-family: 'roboto';
+    font-weight: normal;
     font-size: 14px;
+    line-height: 1.714;
     color: #555555;
     background: #ffffff;
 }
+h1 {
+    font-size: 48px;
+}
 h3 {
     padding-top: 100px;
+    font-weight: 500;
+    font-size: 20px;
 }
 a {
     text-decoration: none;
@@ -44,8 +52,10 @@ a {
     height: 100%;
 }
 .button {
-    margin-top: 50px;
-    padding: 17px 33px;
+    margin-top: 42px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 500;
     text-transform: uppercase;
     border: 2px solid #ffffff;
         
@@ -60,6 +70,7 @@ a {
     background: #555555;
 }
 .block-description {
+    font-weight: 500;
     font-size: 16px;
     margin-top: 30px;
 }
@@ -71,12 +82,35 @@ header {
     background-size: cover;
     background-position: center;
 
-    li {
-        &:not(:first-child) {
-            margin-left: 34px;
-        }
-        &:hover {
-            cursor: pointer;
+    .mobile-menu-icon {
+        position: relative;
+        margin-right: 30px;
+    }
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        font-size: 30px;
+        background: #c0301c;
+    }
+    .menu-show {
+        display: block;
+    }
+    
+    .logo {
+        font-weight: 700;
+    }
+    nav {
+        
+        li {
+            font-weight: 500;
+            
+            &:not(:first-child) {
+                margin-left: 34px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     .header-block {
@@ -89,7 +123,9 @@ header {
         height: 100vh;
     
         .header-text {
-            margin-top: 20px;
+            margin-top: 5px;
+            font-weight: 500;
+            font-size: 20px;
         }
         .started-button {
             .button;
@@ -98,6 +134,9 @@ header {
 }
 .fixed-top {
     top: 40px;
+}
+.mobile-menu-background {
+    background:  #c0301c;
 }
 .scroll {
     top: 0;
@@ -118,8 +157,9 @@ header {
                 margin-top: 70px;
             }
             
-            .monsterrar-fonts-text {
+            .services-discription-text {
                 margin-top: 30px;
+                font-weight: 500;
             }
             .services-text {
                 margin-top: 25px;
@@ -176,6 +216,7 @@ header {
             }
             .dev-name {
                 margin-top: 20px;
+                font-weight: 500;
             }
             .specialization-dev {
                 margin-top: 15px;
@@ -208,44 +249,49 @@ header {
             margin-top: 60px;
             
             .works-item {
-                height: 300px;
-                margin: 15px 0;
-                padding: 0 15px;
-                position: relative;
-                overflow: hidden;
-                box-sizing: border-box;
+        padding: 15px;
+        .wrap {
+            position: relative;
+            padding-bottom: 100%;
+            img {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .track-element {
                 
-                .track-element {
-                    width: calc(100% - 30px);
-                }
-            
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
                 .view-wrapper {
                     display: none;
                     width: 100%;
                     height: 100%;
-                    background: rgba(211, 110, 96, 0.3);
-                
+                    
                     .view-content {
                         .flex-center;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+	                    -webkit-flex-direction: column;
+	                    -ms-flex-direction: column;
                         flex-direction: column;
                         width: 100%;
                         height: 100%;
-                    
+                        background: rgba(211, 110, 96, 0.3);
+                        color: #ffffff;
+                        
                         .view-title {
-                            color: red;
+                            font-size: 18px;
+                            font-weight: 500;
                         }
                         .view-description {
-                    
+                            margin-top: 0;
+                            font-size: 12px;
                         }
                         .view-button {
                             .flex-center;
                             width: 100px;
                             height: 38px;
+                            margin-top: 15px;
                             color: #c0301c;
                             background: #ffffff;
                             
@@ -255,14 +301,9 @@ header {
                         }
                     }
                 }
-                .impact-object {
-                    position: absolute;
-                    top: 0;
-                    display: none;
-                    width: 100%;
-                    height: 100%;
-                }
             }
+        }
+    }
         }
         .works-footer {
             margin-top: 100px;
@@ -277,6 +318,9 @@ header {
             
             .works-footer-text {
                 margin-top: 100px;
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 1.467;
             }
             .works-footer-button {
                 .button;
@@ -306,14 +350,19 @@ header {
             }
             .contact-hedline {
                 position: relative;
+                font-weight: 500;
             }
             .contact-text {
                 margin-top: 20px;
+                font-size: 12px;
             }
         }
         form {
+            margin: 0;
+            font-weight: 500;
+            
             .form-input {
-                margin-top: 20px
+                margin-top: 20px;
             }
             input, textarea, .submit-button {
                 padding: 16px;
@@ -328,9 +377,21 @@ header {
         
             .submit-button {
                 width: 168px;
+                float: left;
  
                 &:hover {
                     cursor: pointer;
+                }
+            }
+            .warning-form-text {
+                .flex-center;
+                height: 100%;
+                float: right;
+                font-size: 12px;
+                
+                span::before {
+                    content: '* ';
+                    color: #c0301c;
                 }
             }
         }
@@ -355,33 +416,108 @@ footer {
     }
     .footer-text {
         margin-top: 30px;
+        font-size: 12px;
+        font-weight: 500;
     }
 }
 
-.wr {
-    width: 10%;
-}
-.blok {
+.con {
     position: relative;
-    max-width: 100%;
-    padding-bottom: 100%;
-    background: green;
+    width: 300px;
+    height: 300px;
     
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-    }
+}
+.block-icon {
+    position: absolute;
+    .flex-center;
+    flex-direction: column;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
 }
 
+.stick {
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  background-color:  #ffffff;
+  display: inline-block;
+}
 
+.stick:last-child {
+  margin-bottom: 0px;
+}
 
+.stick-1.open {
+  animation: stick-1-open .6s ease-out forwards;
+}
 
+.stick-2.open {
+  animation: stick-2-open .6s linear forwards;
+}
 
+.stick-3.open {
+  animation: stick-3-open .6s linear forwards;
+}
 
+@keyframes stick-1-open {
+  0%   {width: 30px;}
+  40%  {background-color: #ffffff; width: 8px; transform: translate(40px, 0px);}
+  75%, 80%  {width: 8px; transform: translate(40px, -50px); animation-timing-function: cubic-bezier(0,1,1,1);}
+  100% {background-color: #ffffff; width: 8px; transform: translate(35px, 46px);}
+}
 
+@keyframes stick-2-open {
+  80%  {background-color: #ffffff; transform: translate(0px, 0px) rotate(0deg);}
+  100% {background-color: #ffffff; transform: translate(0px, 0px) rotate(40deg);}
+}
 
+@keyframes stick-3-open {
+  80%  {background-color: #ffffff; transform: translate(0px, 0px) rotate(0deg);}
+  100% {background-color: #ffffff; transform: translate(0px, -10px) rotate(-40deg);}
+}
 
+.stick-1.close {
+  width: 8px; 
+  transform: translate(27px, 26px);
+  animation: stick-1-close .6s ease-out forwards;
+}
 
+.stick-2.close {
+  transform: translate(0px, 0px) rotate(40deg);
+  animation: stick-2-close .6s ease-out forwards;
+}
 
+.stick-3.close {
+  transform: translate(0px, -23px) rotate(-40deg);
+  animation: stick-3-close .6s ease-out forwards;
+}
+
+@keyframes stick-1-close {
+  0%, 70% {width: 0px;}
+  100%    {width: 30px; transform: translate(0, 0);}
+}
+
+@keyframes stick-2-close {
+  0%   {background-color: #ffffff; width: 30px;}
+  20%  {background-color: #ffffff; width: 8px; transform: translate(0, 0px) rotate(40deg);}
+  40%  {background-color: #ffffff; width: 0px;}
+  65%  {transform: translate(0, -70px); animation-timing-function: cubic-bezier(0,1,1,1);}
+  80%  {width: 0px;}
+  100% {width: 30px; transform: translate(0, 0px);}
+}
+
+@keyframes stick-3-close {
+  0%   {background-color: #ffffff; width: 30px;}
+  20%  {background-color: #ffffff; width: 8px; transform: translate(0, -23px) rotate(-40deg);}
+  40%  {background-color: #ffffff;}
+  65%  {transform: translate(0, -93px); animation-timing-function: cubic-bezier(0,1,1,1);}
+  90%  {width: 8px;}
+  100% {width: 30px; transform: translate(0, 0px);}
+}
