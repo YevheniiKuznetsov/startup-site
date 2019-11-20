@@ -7,7 +7,6 @@ import 'owl.carousel';
 import showHide from './modules/show_hide.js';
 import icons from 'glyphicons';
 
-
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
       loop:true,
@@ -44,18 +43,6 @@ $(document).ready(function() {
       return false;
    });
 });
-/*
-$(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    var viewportHeight = $(window).outerHeight();
-    if(scroll>=viewportHeight-55){
-        $("#navigation").addClass('scroll');
-        $('.mobile-menu')[0].style.display="none";
-    } else {
-        $("#navigation").removeClass('scroll');
-    }
-});
-*/
 
 showHide('track-element', 'impact-object');
 
@@ -66,30 +53,32 @@ function menu(){
         var scroll = $(window).scrollTop();
         var viewportHeight = $(window).outerHeight();
         $('.mobile-menu')[0].style.display="none";
+        if (n) mobileIconAnimation();
         n = false;
         if (scroll > 0 && scroll < viewportHeight-55){
-            $("#navigation").css({'background': '#c0301c'});
+            $("#navigation").css({'background': '#c0301c'}); 
         } else if (scroll >= viewportHeight-55 || scroll === 0){
             $("#navigation").css({'background': ''});
-        }
+        };
         scroll >= viewportHeight-55 ? $("#navigation").addClass('scroll') : $("#navigation").removeClass('scroll');
     });
-    
-    $('#mobileMenuIcon').click(function(event){
+    $(document).ready(function() {
+        $(".block-icon").click(function() {
+            showMobileMenu();
+            mobileIconAnimation();
+        });
+    });
+    function showMobileMenu(){
         n = !n;
-        $('.mobile-menu')[0].style.display="block";
         n ? $('.mobile-menu')[0].style.display="block" : hide();
         function hide(){
             $('.mobile-menu')[0].style.display="none";
         };
-    });
+    };
+    function mobileIconAnimation(){
+        $(".stick").toggleClass(function () {
+            return $(this).is('.open, .close') ? 'open close' : 'open';
+        });
+    };
 };
 menu();
-
-$(document).ready(function() {
-  $(".block-icon").click(function() {
-    $(".stick").toggleClass(function () {
-      return $(this).is('.open, .close') ? 'open close' : 'open';
-    });
-  });
-});
