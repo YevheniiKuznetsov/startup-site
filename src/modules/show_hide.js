@@ -1,29 +1,22 @@
 var showHide = function(el1, el2){
-    var showHideElementInside;
-    var showHideElementOutside;
-    var targetElement;
+
     $(document).mouseover(function(event){
         var target = event.target;
-        targetElement = target.className.split(' ').filter(function(number) {
-            return number == el1;
-        });
-        showHideElementInside = target.getElementsByClassName(el2);
-        showHideElementOutside = document.getElementsByClassName(el2);
+        var targetElement = target.className.split(' ');
+        var showHideElementInside = target.getElementsByClassName(el2);
+        var showHideElementOutside = document.getElementsByClassName(el2);
+
         if(targetElement == el1){
-            hideInside();
+            hide(showHideElementOutside);
             showHideElementInside[0].style.display="block";
         } else {
-            hideOutside();
+            hide(showHideElementInside);
         }
     });
-    var hideInside = function(){
-        for(var i = 0; i<showHideElementOutside.length; i++){
-            showHideElementOutside[i].style.display='none';
-        }
-    }
-    var hideOutside = function(){
-        for(var i = 0; i<showHideElementInside.length; i++){
-            showHideElementInside[i].style.display='none';
+
+    function hide(el){
+        for(var i = 0; i<el.length; i++){
+            el[i].style.display='none';
         }
     }
 }

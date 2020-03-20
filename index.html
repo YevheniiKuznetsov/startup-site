@@ -2,427 +2,297 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>webpack</title>
+        <title>Craftwork</title>
         <!-- <link href="dist/stylesheets/main-two.css" rel="stylesheet"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        <header id="home">
-            <div class="fixed-top" id="navigation">
-                <div class="container">
-                    <div class="navbar navbar-expand justify-content-between">
-                        <div class="logo navbar-brand">Startup</div>
-                        <div class="mobile-menu-icon d-lg-none" id="mobileMenuIcon">  
-                            <div class="block-icon">
-                                <div class="stick stick-1"></div>
-                                <div class="stick stick-2"></div>
-                                <div class="stick stick-3"></div>
-                            </div> 
+        <header>
+            <div class="container">
+                <div class="header-menu">
+                    <div class="container">
+                        <div class="header-menu__menu1">
+                            <div class="link menu-icon">
+                                <div class="menu-icon__wrapper">
+                                    <div class="menu-icon__stick"></div>
+                                    <div class="menu-icon__stick"></div>
+                                    <div class="menu-icon__stick"></div>
+                                </div>
+                            </div>
+                            <div class="link">Tour</div>
+                            <div class="link">Features</div>
+                            <div class="link">Pricing</div>
                         </div>
-                        <nav class="d-none d-lg-block menu-show">
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><a class="topLink" href="#home">Home</a></li>
-                                <li class="nav-item"><a class="topLink" href="#services">Services</a></li>
-                                <li class="nav-item"><a class="topLink" href="#about">About</a></li>
-                                <li class="nav-item"><a class="topLink" href="#letsWorks">Works</a></li>
-                                <li class="nav-item"><a class="topLink" href="#contact">Cantact</a></li>
-                            </ul>
-                        </nav>
+                        <div class="header-menu__logo">
+                            <img src="src/images/logo.png" alt="logo">
+                        </div>
+                        <div class="header-menu__menu2">
+                            <div class="link">Help</div>
+                            <div class="link">Contacts</div>
+                            <div class="link getapp-button">
+                                <div class="">Get App</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu__header">
+                            <div class="menu-logo"><img src="src/images/logo-white.png" alt="logo"></div>
+                            <div id="close_menu_icon" class="close-icon"></div>
+                        </div>
+                        <div class="menu__content">
+                            <div class="link">Tour</div>
+                            <div class="link">Features</div>
+                            <div class="link">Pricing</div>
+                            <div class="link">Help</div>
+                            <div class="link">Contacts</div>
+                            <div class="link getapp-button">
+                                <div class="">Get App</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="mobile-menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="topLink" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="topLink" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="topLink" href="#about">About</a></li>
-                        <li class="nav-item"><a class="topLink" href="#letsWorks">Works</a></li>
-                        <li class="nav-item"><a class="topLink" href="#contact">Cantact</a></li>
-                    </ul>
+                <div class="header-title wow fadeInUp" data-wow-delay="0.2s"><h1>What happens tomorrow?</h1></div>
+                <div class="header-text wow fadeInUp" data-wow-delay="0.3s">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</div>
+                <div id="watch_video" class="watch-video-button wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="">Watch Video</div>
                 </div>
-            </div>
-            <div class="header-block flex-center">
-                <h1>WELCOME TO STARTUP</h1>
-                <div class="header-text">Your Favourite Creative Agency Template</div>
-                <a class="topLink" href="#contact"><div class="started-button">get started</div></a>
+                <div class="video-container">
+                    <div class="video-container__content">
+                        <div id="close_video" class="video-container__close-video-icon close-icon"></div>
+                        <div class="video-container__video"></div>
+                    </div>
+                </div>
+                <div class="phone-block wow fadeInUp" data-wow-delay="0.5s">
+                    <img src="src/images/phone.png" alt="phone">
+                </div>
             </div>
         </header>
-        <div class="content-wrapper">
-            <div class="services" id="services">
-                <div class="container">
-                    <h3>SERVICES</h3>
-                    <div class="line"></div>
-                    <div class="block-description">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
-                    <div class="services-content row">
-                        <div class="services-item col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                            <div class="services-img">
-                                <img src="src/images/faicon.png" alt="">
-                            </div>
-                            <div class="services-discription-text">CLEAN TYPHOGRAPHY</div>
-                            <div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
-                        </div>
-                        <div class="services-item col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                            <div class="services-img">
-                                <img src="src/images/typography.png" alt="">
-                            </div>
-                            <div class="services-discription-text">ROCK SOLID CODE</div>
-                            <div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
-                        </div>
-                        <div class="services-item col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                            <div class="services-img">
-                                <img src="src/images/fasupport.png" alt="">
-                            </div>
-                            <div class="services-discription-text">EXPERT SUPPORT</div>
-                            <div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
+        <div class="features">
+            <div class="container">
+                <div class="row1  wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row1-element">
+                        <div class="row1-element__image"><img src="src/images/realtime.png" alt=""></div>
+                        <div class="row1-element__title">Real-time all the time</div>
+                        <div class="row1-element__text">
+                            Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.<br><br>Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
                         </div>
                     </div>
+                    <div class="row1-element">
+                        <div class="row1-element__image"><img src="src/images/adopvithout.png" alt=""></div>
+                        <div class="row1-element__title">Adopt without any obstacles</div>
+                        <div class="row1-element__text">
+                            This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.<br><br>This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+                        </div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="image-phone wow bounceInLeft" data-wow-delay="0.1s"><img src="src/images/iphone.png" alt="iphone image"></div>
+                    <div class="features-content row2-content">
+                        <div class="features-content__title">Your day is protected</div>
+                        <div class="features-content__text">There have not been any since we have lived here, said my mother.<br><br>We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</div>
+                        <div class="features-content-buttons">
+                            <div class="hack-us-button">Try to hack us</div>
+                            <div class="learn-more-button">Learn more</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="features-content row3-content">
+                        <div class="features-content__title">We are almost everywhere</div>
+                        <div class="features-content__text">Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose.<br><br>Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</div>
+                        <div>
+                            <div class="partners-title">Partners</div>
+                            <div class="partners">
+                                <div class="dropbox-logo"><img src="src/images/dropboxlogo.png" alt="dropbox logo"></div>
+                                <div class="evernote-logo"><img src="src/images/evernotelogo.png" alt="evernote logo"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="world-map-image wow bounceInRight" data-wow-delay="0.1s"><img src="src/images/worldmap.png" alt="world map image"></div>
                 </div>
             </div>
-            <div class="about-us" id="about">
-                <div class="container">
-                    <h3>ABOUT US</h3>
-                    <div class="line"></div>
-                    <div class="block-description">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
-                    <div class="row">
-                        <div class="about-us-text col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</div>
-                        <div class="about-us-text col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat.</div>
-                    </div>
-                    <div class="carousel" id="carousel">
-                        <div class="owl-carousel owl-theme">
-                            <div>
-                                <div class="img-container">
-                                    <img src="src/images/devman3.jpg" alt="">
-                                    <div class="track-element">
-                                        <div class="impact-object">
-                                            <div class="panel flex-center">
-                                                <div class="panel-icon" id="face"><img src="src/images/facebookicon.png" alt="facebook iсon"></div>
-                                                <div class="panel-icon"><img src="src/images/twiterivon.png" alt="twitter icon"></div>
-                                                <div class="panel-icon"><img src="src/images/gplus.png" alt="google icon"></div>
-                                                <div class="panel-icon"><img src="src/images/inicon.png" alt="in icon"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-discription">
-                                    <div class="dev-name">SHAMIM MIA</div>
-                                    <div class="specialization-dev">Sr. Web Developer</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="img-container">
-                                    <img src="src/images/devman4.jpg" alt="">
-                                    <div class="track-element">
-                                        <div class="impact-object">
-                                            <div class="panel flex-center">
-                                                <div class="panel-icon" id="face"><img src="src/images/facebookicon.png" alt="facebook iсon"></div>
-                                                <div class="panel-icon"><img src="src/images/twiterivon.png" alt="twitter icon"></div>
-                                                <div class="panel-icon"><img src="src/images/gplus.png" alt="google icon"></div>
-                                                <div class="panel-icon"><img src="src/images/inicon.png" alt="in icon"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-discription">
-                                    <div class="dev-name">JOHN DOE</div>
-                                    <div class="specialization-dev">Front-end Developer</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="img-container">
-                                    <img src="src/images/devman2.jpg" alt="">
-                                    <div class="track-element">
-                                        <div class="impact-object">
-                                            <div class="panel flex-center">
-                                                <div class="panel-icon" id="face"><img src="src/images/facebookicon.png" alt="facebook iсon"></div>
-                                                <div class="panel-icon"><img src="src/images/twiterivon.png" alt="twitter icon"></div>
-                                                <div class="panel-icon"><img src="src/images/gplus.png" alt="google icon"></div>
-                                                <div class="panel-icon"><img src="src/images/inicon.png" alt="in icon"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-discription">
-                                    <div class="dev-name">RUBEL MIAH</div>
-                                    <div class="specialization-dev">Load WordPress Developer</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="img-container">
-                                    <img src="src/images/devman3.jpg" alt="">
-                                    <div class="track-element">
-                                        <div class="impact-object">
-                                            <div class="panel flex-center">
-                                                <div class="panel-icon" id="face"><img src="src/images/facebookicon.png" alt="facebook iсon"></div>
-                                                <div class="panel-icon"><img src="src/images/twiterivon.png" alt="twitter icon"></div>
-                                                <div class="panel-icon"><img src="src/images/gplus.png" alt="google icon"></div>
-                                                <div class="panel-icon"><img src="src/images/inicon.png" alt="in icon"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-discription">
-                                    <div class="dev-name">SHAMIM MIA</div>
-                                    <div class="specialization-dev">Sr. Web Developer</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="img-container">
-                                    <img src="src/images/devman4.jpg" alt="">
-                                    <div class="track-element">
-                                        <div class="impact-object">
-                                            <div class="panel flex-center">
-                                                <div class="panel-icon" id="face"><img src="src/images/facebookicon.png" alt="facebook iсon"></div>
-                                                <div class="panel-icon"><img src="src/images/twiterivon.png" alt="twitter icon"></div>
-                                                <div class="panel-icon"><img src="src/images/gplus.png" alt="google icon"></div>
-                                                <div class="panel-icon"><img src="src/images/inicon.png" alt="in icon"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-discription">
-                                    <div class="dev-name">JOHN DOE</div>
-                                    <div class="specialization-dev">Front-end Developer</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="img-container">
-                                    <img src="src/images/devman2.jpg" alt="">
-                                    <div class="track-element">
-                                        <div class="impact-object">
-                                            <div class="panel flex-center">
-                                                <div class="panel-icon" id="face"><img src="src/images/facebookicon.png" alt="facebook iсon"></div>
-                                                <div class="panel-icon"><img src="src/images/twiterivon.png" alt="twitter icon"></div>
-                                                <div class="panel-icon"><img src="src/images/gplus.png" alt="google icon"></div>
-                                                <div class="panel-icon"><img src="src/images/inicon.png" alt="in icon"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-discription">
-                                    <div class="dev-name">RUBEL MIAH</div>
-                                    <div class="specialization-dev">Load WordPress Developer</div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
+        </div>
+        <div class="beautiful-interface">
+            <div class="beautiful-interface__title headline">Beautiful interface</div>
+            <div class="beautiful-interface__subtitle">Landing screen</div>
+            <div class="beautiful-interface__img-list">
+                <div class="list"><img src="src/images/imglist1.png" alt=""></div>
+                <div class="list"><img src="src/images/imglist2.png" alt=""></div>
+                <div class="list"><img src="src/images/imglist3.png" alt=""></div>
+                <div class="list"><img src="src/images/imglist4.png" alt=""></div>
+                <div class="list"><img src="src/images/imglist5.png" alt=""></div>
             </div>
-            <div id="letsWorks" class="lets-works">
-                <div class="container">
-                    <h3>LETS WORKS</h3>
-                    <div class="works-wrapper row">
-                        
-                        <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/galery1.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/galery2.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/gallery3.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/gallery4.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/gallery5.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/gallery6.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/gallery7.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/gallery8.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                    <div class="wrap">
-                        <img src="src/images/gallery9.jpg" alt="">
-                        <div class="track-element">
-                            <div class="impact-object view-wrapper">
-                                <div class="view-content">
-                                    <div class="view-title">Hair Dresser</div>
-                                    <div class="view-description">Branding</div>
-                                    <div class="view-button">VIEW</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-                <div class="works-footer container-fluid">
-                    <div class="works-footer-text">
-                        Do you like OUR WORK so far?<br>Let's talk about YOUR PROJECT!
-                    </div>
-                    <a class="topLink" href="#contact"><div class="works-footer-button">GET IN TOUCH</div></a>
-                </div>
+            <div class="beautiful-interface__new-providence"><span>new</span>providence</div>
+            <div class="beautiful-interface__get-it headline">Get it to your smartphone</div>
+            <div class="beautiful-interface__form">
+                <form>
+                    <input class="email-input" type="email" placeholder="Email here">
+                    <button class="submit-button" type="submit">Send invite</button>
+                </form>
             </div>
-            
-            <div class="contact" id="contact">
-                <div class="container">
-                    <h3>GET IN TOUCH</h3>
-                    <div class="line"></div>
-                    <div class="block-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                    <div class="contact-content row">
-                        <div class="contact-wrapper col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mr-auto">
-                            <div class="address">
-                                <div class="contact-hedline flex-center justify-content-start"><div class="contact-icons"><img src="src/images/address.jpg" alt=""></div><div>ADRESS</div></div>
-                                <div class="contact-text">
-                                    <div>312, 7th Ave, New York</div>
-                                    <div>NY 101200, United States of America</div>
-                                </div>
-                                
-                            </div>
-                            <div class="hotline">
-                                <div class="contact-hedline flex-center justify-content-start"><div class="contact-icons"><img src="src/images/hotline2.jpg" alt=""></div><div>HOTLINE</div></div>
-                                <div class="contact-text">
-                                    <div>+65 0052 300, +65 88251 210</div>
-                                    <div>+88 01723 511 340</div>
-                                </div>
-                            </div>
-                            <div class="e-mail">
-                                <div class="contact-hedline flex-center justify-content-start"><div class="contact-icons"><img src="src/images/email.jpg" alt=""></div><div>E-MAIL</div></div>
-                                <div class="contact-text">
-                                    <div>shapedtheme@gmail.com</div>
-                                    <div>khalilkode@gmail.com</div>
-                                </div>
+            <div class="beautiful-interface__download-text">Or download from</div>
+            <div class="download-button">
+                <div class="download-button__row1">Download on the</div>
+                <div class="download-button__row2">App Store</div>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="container">
+                <div class="carousel">
+                    <div class="prev-button"></div>
+                    <div class="carousel-content-wrapper">
+                        <div class="carousel-item">
+                            <div class="item-img"><img src="src/images/user1.jpg" alt="carousel image"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-img"><img src="src/images/user2.jpg" alt="carousel image"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-img"><img src="src/images/user3.jpg" alt="carousel image"></div>
+                        </div>
+                    </div>  
+                    <div class="next-button"></div>
+                </div>
+                <div class="carousel-items-text">
+                    <div class="item-content">
+                        <div class="item-title">New Providence is the great UI kit 1 </div>
+                        <div class="item-text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</div>
+                        <div class="user-name">Cameron Downman</div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-title">New Providence is the great UI kit 2 </div>
+                        <div class="item-text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</div>
+                        <div class="user-name">Robert De Niro</div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-title">New Providence is the great UI kit 3</div>
+                        <div class="item-text">“Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”</div>
+                        <div class="user-name">Claudia Cymbek</div>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <div class="choose-plan">
+            <div class="container">
+                <div class="choose-plan-row">
+                    <div class="choose-plan-first-element">
+                        <div class="choose-plan-title headline">Choose your perfect plan</div>
+                        <div class="you-are-text">You are</div>
+                        <div class="choose-plan-button-wrapper">
+                            <div class="choose-plan-button">
+                                <div class="choose-plan-button__individual-button choose-plan-button-elements choose-plan-button-element-active">Individual</div>
+                                <div class="choose-plan-button__company-button choose-plan-button-elements choose-plan-button-click">Company</div>
                             </div>
                         </div>
-                        <form class="row col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
-                            <div class="form-input col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <input class="w-100" type="text" placeholder="YOUR NAME">
+                        <div class="choose-plan-text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</div>
+                        <div class="choose-plan-footer">Have a bigger team? <a href="#">Let's talk</a></div>
+                    </div>
+                    <div class="product-description-wrapper">
+                        <div class="product-description-content product-description-content-active">
+                        <div class="product-description product-description-active">
+                            <div class="product-description__title">Started</div>
+                            <div class="product-description__price">
+                                <div class="price-content">Free</div>
                             </div>
-                            <div class="form-input col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <input class="w-100" type="email" placeholder="YOUR E-MAIL">
+                            <div class="product-description__description">Build your schedule every day</div>
+                            <div class="product-description__items  product-description__items_identation">
+                                <div class="product-description__item">
+                                    <div class="product-description-item-content">Unlimeted events</div>
+                                </div>
+                                <div class="product-description__item">
+                                    <div class="product-description-item-content">Connect Dropbox and Evernote</div>
+                                </div>
                             </div>
-                            <div class="form-input col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <input class="w-100" type="text" placeholder="YOUR SUBJECT">
+                            <div class="product-description__button">
+                                Get started
                             </div>
-                            <div class="form-input col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <input class="w-100" type="text" placeholder="COMPANY NAME">
+                        </div>
+                        </div>
+                        <div class="product-description-content">
+                        <div class="product-description">
+                            <div class="product-description__title">Pro</div>
+                            <div class="product-description__price">
+                                <div class="price-content">$4.99</div>
                             </div>
-                            <div class="form-input col-12">
-                                <textarea class="w-100" required placeholder="WRITE YOUR MESSAGE"></textarea>
+                            <div class="product-description__description">Make your life better</div>
+                            <div class="product-description__items">
+                                <div class="product-description__item">
+                                    <div class="product-description-item-content">Unlimeted events</div>
+                                </div>
+                                <div class="product-description__item">
+                                    <div class="product-description-item-content">Connect Dropbox and Evernote</div>
+                                </div>
+                                <div class="product-description__item">
+                                    <div class="product-description-item-content">Personal Assistant</div>
+                                </div>
                             </div>
-                            
-                            <div class="form-input col-12">
-                                <div class="submit-button">SEND MESSAGE</div>
-                                <div class="warning-form-text"><div class=""><span></span>We’ll contact you as possible. We don’t reply on Monday.</div></div>
+                            <div class="product-description__button">
+                                Make me a pro
                             </div>
-                        </form>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <footer>
-            <div class="footer-img flex-center">
-                <img src="src/images/footerimg.png" alt="footer img">
-                <img src="src/images/footerimg.png" alt="footer img">
-                <img src="src/images/footerimg.png" alt="footer img">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="site-download">
+                        <div class="site-download__logo"><img src="src/images/logo.png" alt="logo"></div>
+                        <div class="site-download__text">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</div>
+                        <div class="site-download__button-wrapper">
+                            <div class="site-download__button download-button">
+                                <div class="download-button__row1">Download on the</div>
+                                <div class="download-button__row2">App Store</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-description-wrapper">
+                        <div class="site-description-item">
+                            <div class="site-description-item__title">Learn more</div>
+                            <div class="site-description-item__content-wrapper">
+                                <div class="site-description-item__content-item">How it works?</div>
+                                <div class="site-description-item__content-item">Meeting tools</div>
+                                <div class="site-description-item__content-item">Live striming</div>
+                                <div class="site-description-item__content-item">Contat method</div>
+                            </div>
+                        </div>
+                        
+                        <div class="site-description-item">
+                            <div class="site-description-item__title">About Us</div>
+                            <div class="site-description-item__content-wrapper">
+                                <div class="site-description-item__content-item">About us</div>
+                                <div class="site-description-item__content-item">Features</div>
+                                <div class="site-description-item__content-item">Privacy police</div>
+                                <div class="site-description-item__content-item">Terms and Conditions</div>
+                            </div>
+                        </div>
+                        
+                        <div class="site-description-item">
+                            <div class="site-description-item__title">Support</div>
+                            <div class="site-description-item__content-wrapper">
+                                <div class="site-description-item__content-item">F.A.Q.</div>
+                                <div class="site-description-item__content-item">Contact us</div>
+                                <div class="site-description-item__content-item">Live chat</div>
+                                <div class="site-description-item__content-item">Phone call</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="maker">
+                        <div class="maker__text">Made with Love by</div>
+                        <div class="maker__logo"><img src="src/images/footerlogo.png" alt="logo"></div>
+                    </div>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="footer-text">© 2015 Startup, Designed by ShapedTheme</div>
         </footer>
-        <div class="con">
-            <div class="block-icon">
-            <div class="stick stick-1"></div>
-            <div class="stick stick-2"></div>
-            <div class="stick stick-3"></div>
-        </div>
-        </div>
+        
+        
+        
         
         <script src="dist/main.js"></script>
-        
     </body>
 </html>
